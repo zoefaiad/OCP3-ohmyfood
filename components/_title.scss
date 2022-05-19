@@ -1,0 +1,18 @@
+// "book the menu you want" title and discover button
+.title {
+    @include flex (center, center);
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+    background-color: #f6f6f6;
+        h2 {
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+        }
+        p {
+            font-weight: 300;
+            font-size: large;
+            text-align: center;
+        }
+}

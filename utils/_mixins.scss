@@ -1,0 +1,190 @@
+// mixin for the "new" icon on front page restaurant pics
+@mixin relative ($top, $left) {
+    position: relative;
+    border: 1px solid $tertiary-color;
+    background-color: $tertiary-color;
+    color: $darken-tertiary;
+    padding: 7px 10px;
+    top: $top;
+    left: $left; 
+}
+
+// mixins for both buttons
+@mixin button {
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-image: linear-gradient($secondary-color,$primary-color);
+}
+
+// individual meal card
+// mixin
+@mixin cards {
+    background-color: #FFFF;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    margin-top: 15px;
+    display: flex;
+    overflow: hidden;
+    animation: cards 0.5s;
+}
+
+// keyframe
+@keyframes cards {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// mixin for flex
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin  flex-justify ($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin flex-align ($align) {
+    display: flex;
+    align-items: $align;
+}
+
+// mixin for borders
+@mixin border-radius ($border, $radius, $color){
+    border: $border;
+    border-radius: $radius;
+    background-color: $color;
+}
+
+@mixin border ($border) {
+    border: $border;
+}
+
+// media queries 
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints,tablet)){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+$breakpoints: (
+    tablet: 768px,
+    desktop: 995px
+);
+
+// keyframe for the menu apparence while loading
+@keyframes menu {
+    0% {
+        transform: scale(0);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+// keyframe for the :hover check icon 
+@keyframes spin {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+//loader spinner 
+
+// mixins
+@mixin bubbles-animation {
+    animation: spinner 1.2s linear infinite;
+    position: relative;
+}
+@mixin bubbles ($width, $height, $radius){
+    width: $width;
+    height: $height;
+    background-color: rgb(216, 240, 247);
+    border-radius: $radius;
+    position: relative;
+}
+
+
+
+// keyframes
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fade1 {
+    0% {
+    opacity:1;
+    }
+    50%{
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+    opacity:0;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+@keyframes loader {
+    100% {
+    opacity: 0;
+    z-index: -10;
+    }
+} 

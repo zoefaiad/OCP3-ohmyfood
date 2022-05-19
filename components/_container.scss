@@ -1,0 +1,233 @@
+.logo__icon {
+    position: absolute;
+    font-size: 20px;
+    margin: 15px;
+    color: #000;
+}
+// picture of the restaurant where you can order
+main img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+// restaurant menu
+.container {
+    @include border-radius (1px solid #f6f6f6, 50px 50px 0 0, #f6f6f6);
+    margin-top: -60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    height: 1150px;
+    transition: all 1s;
+    &__title {
+        @include flex (space-between, center);
+        margin-top: 25px;
+        h2 {
+            font-family: $main-title-font;
+            margin: 0;
+        }
+    }
+    &__icon {
+        padding: 5px 50px 0 0;
+        font-size: 25px;   
+    }
+    h3 {
+        font-size: 15px;
+        font-weight: 400;
+        color: grey;
+        margin-bottom: 5px;
+    }
+    &__border {
+        width: 40px;
+        @include border (2px solid $tertiary-color);
+        background-color: $tertiary-color;
+    }
+    &__meal {
+        padding: 5px;
+        overflow: hidden;
+        @include flex-justify (space-between);
+        flex: 1;
+
+    }
+    &__details {
+        @include flex-justify (space-evenly);
+        flex-direction: column;
+        overflow: hidden;
+        white-space: nowrap;
+            h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0px;
+            }
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0px;
+            }
+    } 
+    &__price {
+        @include flex-align (flex-end);
+        font-weight: 700;
+    }
+    &__selection {
+        @include flex (center, center);
+        margin-right: -60px;
+        width: 60px;
+        background-color: $tertiary-color;
+        border-radius: 0 15px 15px 0;
+        transition: margin-right 0.4s;
+    }
+    &__check {
+        color: white;
+        font-size: larger;
+    }
+}
+
+// heart
+.container__icon--empty {
+    font-size: 25px;
+    z-index: 0;
+
+}
+
+.container__icon--full {
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    right: 29px;
+    top: 3px;
+    color: transparent;
+    background-image: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+}
+
+// animations for each menu container
+.container {
+    &__menu--0 {
+        @include cards;
+        animation-delay: 0.1s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--1 {
+        @include cards;
+        animation-delay: 0.2s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--2 {
+        @include cards;
+        animation-delay: 0.3s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--3 {
+        @include cards;
+        animation-delay: 0.4s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--4 {
+        @include cards;
+        animation-delay: 0.5s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--5 {
+        @include cards;
+        animation-delay: 0.6s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--6 {
+        @include cards;
+        animation-delay: 0.7s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--7 {
+        @include cards;
+        animation-delay: 0.8s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--8 {
+        @include cards;
+        animation-delay: 0.9s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+    &__menu--9 {
+        @include cards;
+        animation-delay: 1s;
+        &:hover {
+            .container__selection {
+                margin-right: 0px;
+            }
+            i {
+                animation: spin 0.5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.loader {
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: wait;
+    background-color: rgba(239, 239, 239, 0.7);
+    animation: loader .01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    @include flex (center, center);
+        .bubble {
+            &__small {
+                @include bubbles-animation;
+                top: 250px;
+                right: 40px;
+                &__1 {
+                    @include bubbles (20px, 20px, 20px);
+                    right: 5px;
+                    top: 45px;
+
+                }
+                &__2 {
+                    @include bubbles (20px, 20px, 20px);
+                    top: 15px;
+                    left: 10px;
+                }
+                &__3 {
+                    @include bubbles (30px, 30px, 30px);
+                    position: relative;
+                    }
+            }
+            &__medium {
+                @include bubbles-animation;
+                top: 80px;
+                right: 0px;
+                &__1 {
+                    @include bubbles (30px, 30px, 30px);
+                    left: 60px;
+                    top: 120px;
+                }
+                &__2 {
+                    @include bubbles (40px, 40px, 40px);
+                    left: 40px;
+                    top: 90px;
+                }
+                &__3 {
+                    @include bubbles (20px, 20px, 20px);
+                    left: 50px;
+                    top: 40px;
+                }
+                &__4 {
+                    @include bubbles (30px, 30px, 45px);
+                    position: relative;
+                    left: 35px;
+                    top: 40px;
+                }
+            }
+            &__large {
+                @include bubbles-animation;
+                bottom: 250px;
+                left: 120px;
+                &__1 {
+                    @include bubbles (50px, 50px, 50px);
+                    top: 270px;
+                    left: 70px;
+                }
+                &__2 {
+                    @include bubbles (65px, 65px, 65px);
+                    top: 180px;
+                    left: 50px;
+                }
+                &__3 {
+                    @include bubbles (70px, 70px, 55px);
+                    top: 80px;
+                    left: 25px;
+                }
+                &__4 {
+                    @include bubbles (80px, 80px, 65px);
+                    top: 25px;
+                    right: 25px;
+                }
+                &__5 {
+                    @include bubbles (80px, 80px, 65px);
+                }
+            }
+            &__icons {
+            position: relative;
+            bottom: 360px;
+            left: 140px;
+                .fa-pizza-slice {
+                    animation: fade1 3s ease-in infinite, spinner 1.2s linear infinite;
+                    position: relative;
+                    color: $primary-color;
+                }
+                .fa-burger {
+                    animation: fade2 3s ease-in infinite, spinner 1.2s linear infinite;
+                    position: relative;
+                    right: 50px;
+                    color: $tertiary-color;
+                }
+                .fa-fish {
+                    animation: fade3 3s ease-in infinite, spinner 1.2s linear infinite;
+                    position: relative;
+                    right: 100px;
+                    color: $secondary-color;
+                }
+            }
+            &__text {
+                position: relative;
+                bottom: 240px;
+            }
+        }
+}
+
+

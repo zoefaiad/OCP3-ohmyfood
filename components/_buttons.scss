@@ -1,0 +1,30 @@
+// button on individual restaurant page to order
+.order__button {
+    @include flex (center, center);
+    @include button;
+    width: 100px;
+    background-color: $secondary-color;
+    margin-top: 50px;
+    &:hover {
+        transition-duration: 0.4s;
+        opacity: 0.7; 
+        box-shadow: 3px 3px 10px rgb(25, 25, 25);
+    }
+}
+
+.order__button--position {
+    @include flex (center, center)
+}
+
+// button on front page 
+.title__button {
+    @include button;
+    &:hover {
+        transition-duration: 0.4s;
+        opacity: 0.7; 
+        box-shadow: 3px 3px 10px rgb(25, 25, 25);
+    }
+}
+
+
+

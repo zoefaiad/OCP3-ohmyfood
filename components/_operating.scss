@@ -1,0 +1,36 @@
+
+// how the website works container
+.operating {
+    h2 {
+    padding-left: 15px;
+}
+    &__card {
+        @include border-radius (2px solid white, 25px, #f6f6f6);
+        height: 50px;
+        margin: 20px;
+        padding: 10px;
+        &:hover {
+            background-color: #f5edff;
+        }
+}
+    &__text {
+        @include flex-align (center);
+        p {
+            font-weight: 500;
+        }
+}
+    &__number {
+        @include flex (center, center);
+        @include border-radius (1px solid $primary-color, 15px, $primary-color);
+        width: 25px;
+        height: 25px;
+        color: white;
+        margin-left: -20px;
+        margin-right: 20px;
+}
+    &__icon {
+        margin-right: 20px;
+        color: gray;
+        font-size: 20px;
+}
+}

@@ -1,0 +1,13 @@
+// eventually youll be able to change location
+.city {
+    background-color: #eaeaea;
+    width: 100%;
+    box-shadow: inset 0px 14px 15px -7px rgba(200,200,200,0.45);
+    &__text {
+        @include flex (center, center);
+    }
+    &__icon {
+        padding-right: 15px;
+    }
+
+}
