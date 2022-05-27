@@ -6,7 +6,7 @@
     color: $darken-tertiary;
     padding: 7px 10px;
     top: $top;
-    left: $left; 
+    left: $left;
 }
 
 // mixins for both buttons
@@ -34,7 +34,7 @@
     animation: cards 0.5s;
 }
 
-// keyframe
+// keyframe menu apparence while loading
 @keyframes cards {
     0% {
         transform: scale(0);
@@ -42,6 +42,17 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+// keyframe for the :hover check icon 
+@keyframes spin {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
     }
 }
 
@@ -91,30 +102,9 @@ $breakpoints: (
     desktop: 995px
 );
 
-// keyframe for the menu apparence while loading
-@keyframes menu {
-    0% {
-        transform: scale(0);
-    }
-    
-    100% {
-        transform: scale(1);
-    }
-}
 
-// keyframe for the :hover check icon 
-@keyframes spin {
-    0% {
-        transform: rotate(180deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 //loader spinner 
-
 // mixins
 @mixin bubbles-animation {
     animation: spinner 1.2s linear infinite;
@@ -127,7 +117,6 @@ $breakpoints: (
     border-radius: $radius;
     position: relative;
 }
-
 
 
 // keyframes
@@ -161,9 +150,6 @@ $breakpoints: (
     }
     50%{
     opacity:1;
-    }
-    75% {
-        opacity: 0.5;
     }
     100% {
     opacity:0;
