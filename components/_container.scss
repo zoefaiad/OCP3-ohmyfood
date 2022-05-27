@@ -4,12 +4,6 @@
     margin: 15px;
     color: #000;
 }
-// picture of the restaurant where you can order
-main img {
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-}
 
 // restaurant menu
 .container {
@@ -20,6 +14,11 @@ main img {
     position: relative;
     height: 1150px;
     transition: all 1s;
+    &__picture {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
     &__title {
         @include flex (space-between, center);
         margin-top: 25px;
