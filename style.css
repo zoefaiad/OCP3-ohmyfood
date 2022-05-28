@@ -286,16 +286,6 @@ body {
      object-fit: cover;
 }
 
-.restaurant__picture span {
-  position: relative;
-  border: 1px solid #99E2D0;
-  background-color: #99E2D0;
-  color: #0c8d6f;
-  padding: 7px 10px;
-  top: 40px;
-  left: 315px;
-}
-
 .restaurant__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +306,19 @@ body {
 
 .restaurant__name p {
   margin-top: 5px;
+}
+
+.span-new {
+  position: relative;
+}
+
+.span-new::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99E2D0;
+  color: #0c8d6f;
+  padding: 10px 15px;
+  right: 15px;
 }
 
 .heart {
@@ -344,6 +347,7 @@ body {
   color: transparent;
   background-image: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   overflow: hidden;
   opacity: 0;
   -webkit-transition: all 400ms ease-in-out;
@@ -372,13 +376,6 @@ body {
   height: 1150px;
   -webkit-transition: all 1s;
   transition: all 1s;
-}
-
-.container__picture {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 300px;
 }
 
 .container__title {
@@ -491,6 +488,13 @@ body {
   font-size: larger;
 }
 
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
 .container__icon--empty {
   font-size: 25px;
   z-index: 0;
@@ -505,6 +509,7 @@ body {
   color: transparent;
   background-image: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   overflow: hidden;
   opacity: 0;
   -webkit-transition: all 500ms ease-in-out;

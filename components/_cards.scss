@@ -28,9 +28,6 @@
                 width: 100%;
                 object-fit: cover;
             }
-            span {
-                @include relative (40px, 315px);
-            }
             }
     &__text {
         @include flex-justify (space-between);
@@ -44,6 +41,18 @@
             p {
                 margin-top: 5px;
             }
+    }
+}
+
+.span-new {
+    position: relative;
+    &::before {
+        content: "Nouveau";
+        position: absolute;
+        background-color: $tertiary-color;
+        color: $darken-tertiary;
+        padding: 10px 15px;
+        right: 15px;
     }
 }
 
@@ -67,6 +76,7 @@
         color: transparent;
         background-image: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
         background-clip: text;
+        -webkit-background-clip: text;
         overflow: hidden;
         opacity: 0;
         transition: all 400ms ease-in-out;

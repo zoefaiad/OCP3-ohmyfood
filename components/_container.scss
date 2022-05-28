@@ -14,11 +14,6 @@
     position: relative;
     height: 1150px;
     transition: all 1s;
-    &__picture {
-        object-fit: cover;
-        width: 100%;
-        height: 300px;
-    }
     &__title {
         @include flex (space-between, center);
         margin-top: 25px;
@@ -83,6 +78,15 @@
     }
 }
 
+main {
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        }
+    }
+
+
 // heart
 .container__icon--empty {
     font-size: 25px;
@@ -99,6 +103,7 @@
     color: transparent;
     background-image: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     overflow: hidden;
     opacity: 0;
     transition: all 500ms ease-in-out;

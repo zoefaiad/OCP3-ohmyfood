@@ -1,14 +1,3 @@
-// mixin for the "new" icon on front page restaurant pics
-@mixin relative ($top, $left) {
-    position: relative;
-    border: 1px solid $tertiary-color;
-    background-color: $tertiary-color;
-    color: $darken-tertiary;
-    padding: 7px 10px;
-    top: $top;
-    left: $left;
-}
-
 // mixins for both buttons
 @mixin button {
     color: white;
