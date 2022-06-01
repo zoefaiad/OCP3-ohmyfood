@@ -168,6 +168,10 @@ body {
           box-sizing: border-box;
 }
 
+.page-block {
+  max-width: 1330px;
+}
+
 .order__button {
   display: -webkit-box;
   display: -ms-flexbox;
