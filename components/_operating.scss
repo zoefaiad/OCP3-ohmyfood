@@ -11,6 +11,9 @@
         padding: 10px;
         &:hover {
             background-color: #f5edff;
+            .operating__icon {
+                color: $primary-color;
+            }
         }
 }
     &__text {
@@ -32,8 +35,5 @@
         margin-right: 20px;
         color: gray;
         font-size: 20px;
-        &:hover {
-            color: $primary-color;
-        }
 }
 }

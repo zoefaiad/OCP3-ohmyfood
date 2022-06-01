@@ -821,6 +821,10 @@ main img {
   background-color: #f5edff;
 }
 
+.operating__card:hover .operating__icon {
+  color: #9356dc;
+}
+
 .operating__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -858,10 +862,6 @@ main img {
   margin-right: 20px;
   color: gray;
   font-size: 20px;
-}
-
-.operating__icon:hover {
-  color: #9356dc;
 }
 
 .title {
