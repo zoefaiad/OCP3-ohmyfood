@@ -860,6 +860,10 @@ main img {
   font-size: 20px;
 }
 
+.operating__icon:hover {
+  color: #9356dc;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
