@@ -1,22 +1,26 @@
 @-webkit-keyframes cards {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
+            transform: translate3d(0, 15px, 0);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes cards {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
+            transform: translate3d(0, 15px, 0);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
@@ -535,8 +539,10 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 .container__menu--0:hover .container__selection {
@@ -561,8 +567,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .container__menu--1:hover .container__selection {
@@ -587,8 +593,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .container__menu--2:hover .container__selection {
@@ -613,8 +619,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .container__menu--3:hover .container__selection {
@@ -639,8 +645,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .container__menu--4:hover .container__selection {
@@ -665,8 +671,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .container__menu--5:hover .container__selection {
@@ -691,8 +697,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
 
 .container__menu--6:hover .container__selection {
@@ -717,8 +723,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 
 .container__menu--7:hover .container__selection {
@@ -743,8 +749,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 .container__menu--8:hover .container__selection {
@@ -769,8 +775,8 @@ main img {
   overflow: hidden;
   -webkit-animation: cards 0.5s;
           animation: cards 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .container__menu--9:hover .container__selection {

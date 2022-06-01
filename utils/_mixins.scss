@@ -26,11 +26,13 @@
 // keyframe menu apparence while loading
 @keyframes cards {
     0% {
-        transform: scale(0);
+        opacity: 0;
+        transform: translate3d(0, 15px, 0);
     }
 
     100% {
-        transform: scale(1);
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 

@@ -116,7 +116,8 @@ main {
 .container {
     &__menu--0 {
         @include cards;
-        animation-delay: 0.1s;
+        animation-delay: 0.2s;
+        animation-timing-function: ease-in;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -128,7 +129,7 @@ main {
     }
     &__menu--1 {
         @include cards;
-        animation-delay: 0.2s;
+        animation-delay: 0.4s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -140,7 +141,7 @@ main {
     }
     &__menu--2 {
         @include cards;
-        animation-delay: 0.3s;
+        animation-delay: 0.6s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -152,7 +153,7 @@ main {
     }
     &__menu--3 {
         @include cards;
-        animation-delay: 0.4s;
+        animation-delay: 0.8s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -164,7 +165,7 @@ main {
     }
     &__menu--4 {
         @include cards;
-        animation-delay: 0.5s;
+        animation-delay: 1s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -176,7 +177,7 @@ main {
     }
     &__menu--5 {
         @include cards;
-        animation-delay: 0.6s;
+        animation-delay: 1.2s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -188,7 +189,7 @@ main {
     }
     &__menu--6 {
         @include cards;
-        animation-delay: 0.7s;
+        animation-delay: 1.4s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -200,7 +201,7 @@ main {
     }
     &__menu--7 {
         @include cards;
-        animation-delay: 0.8s;
+        animation-delay: 1.6s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -212,7 +213,7 @@ main {
     }
     &__menu--8 {
         @include cards;
-        animation-delay: 0.9s;
+        animation-delay: 1.8s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
@@ -224,7 +225,7 @@ main {
     }
     &__menu--9 {
         @include cards;
-        animation-delay: 1s;
+        animation-delay: 2s;
         &:hover {
             .container__selection {
                 margin-right: 0px;
